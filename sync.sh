@@ -16,6 +16,6 @@ for branch in $(git branch -r | grep 'upstream/' | sed 's/upstream\///'); do
     fi
     # 将 upstream 的更改合并到当前分支
     git merge upstream/$branch
-    # 将更改推送到origin
+    # 将更改推送到 origin
     git push origin $branch
 done
