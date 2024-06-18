@@ -19,3 +19,6 @@ for branch in $(git branch -r | grep 'upstream/' | sed 's/upstream\///'); do
     # 将更改推送到 origin
     git push origin $branch
 done
+
+# 回到主分支
+git checkout main
