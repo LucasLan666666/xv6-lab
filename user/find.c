@@ -4,17 +4,6 @@
 #include "kernel/fs.h"
 #include "kernel/fcntl.h"
 
-// static char*
-// fmtname(char *path)
-// {
-//     char *p;
-//     /* Find first character after last slash. */
-//     for (p = path + strlen(path); p >= path && *p != '/'; p--)
-//         ;
-//     p++;
-//     return p;
-// }
-
 static void
 find(char *path, char *patt)
 {
